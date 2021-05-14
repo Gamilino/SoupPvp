@@ -31,7 +31,7 @@ class Main extends PluginBase implements Listener {
 
 	public function versionCheck(){
 		if($this->getConfig()->get('version') != '1.1.0'){
-			$this->getLogger()->warning('§cThe configuration file is outdated! Please delete it and restart your server to install the latest version');
+			$this->getLogger()->warning('§cEin Fehler ist aufgetreten!');
 			$this->getServer()->getPluginManager()->disablePlugin($this);
 		}
 	}
@@ -82,7 +82,7 @@ class Main extends PluginBase implements Listener {
 		if($line1 == '[REFILL]'){
 			if($player->hasPermission('souppvp.refill.sign.create')){
 			} else {
-				$ev->setLine(0, 'You cannot do this');
+				$ev->setLine(0, 'Du kannst dies nicht tun!');
 			}
 		}
 	}
