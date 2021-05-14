@@ -22,7 +22,7 @@ class RefillCommand extends Command {
     public function __construct(Main $main){
         $this->main = $main;
 
-        parent::__construct('refill', 'Allows a player to refill their soup');
+        parent::__construct('refill', 'Du kriegst neue Soups!');
         $this->setPermission('souppvp.refill');
     }
 
